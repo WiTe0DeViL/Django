@@ -1,3 +1,4 @@
+import email
 from django.db import models
 
 # Create your models here.
@@ -42,21 +43,15 @@ class Customer(models.Model):
     ]
 
     first_name = models.CharField(max_length=20)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     last_name = models.CharField(max_length=20)
 <<<<<<< HEAD
     Email = models.EmailField(unique=True)
 =======
     sunni = models.CharField(max_length=20)
-=======
     last_name = models.CharField(max_length=20)
->>>>>>> parent of 0afe678 (update)
     email = models.EmailField(unique=True)
->>>>>>> parent of befa7f7 (update)
-=======
     email = models.EmailField(unique=True)
->>>>>>> parent of 7eb07a7 (update)
     phone = models.CharField(max_length=25)
     birth_date = models.DateField(null=True)
     gender = models.CharField(max_length=10)
